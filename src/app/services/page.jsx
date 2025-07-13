@@ -37,6 +37,23 @@ const Services = () => {
       icon: "📱",
       price: "$2000",
     },
+    {
+      id: 5,
+      title: "Mobile App Development",
+      description:
+        "Create scalable mobile apps for iOS and Android using React Native or Flutter.",
+      icon: "📱",
+      price: "$2000",
+    },
+    {
+      id: 6,
+      title: "Mobile App Development",
+      description:
+        "Create scalable mobile apps for iOS and Android using React Native or Flutter.",
+      icon: "📱",
+      price: "$2000",
+    },
+    
   ];
 
   return (

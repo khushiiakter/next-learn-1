@@ -37,10 +37,17 @@ const ServiceDetails = ({params}) => {
       price: "$2000",
     },
   ];
+
+  const serviceDetail= services.find(s => s.id == id);
+  if(!serviceDetail) return <h1 className='pt-10 text-2xl'>Not found any service.</h1>
   return (
     <>
     <div>ServiceDetails</div>
     <p className='text-3xl'>Id : {id}</p>
+    <p className='text-2xl'>{serviceDetail.title}</p>
+    <p className='text-2xl'>{serviceDetail.icon}</p>
+    <p>{serviceDetail.description}</p>
+
     </>
     
   )
