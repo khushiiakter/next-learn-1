@@ -29,6 +29,9 @@ const Navbar = () => {
           <Link href="/posts">
             <li>Posts</li>
           </Link>
+          <Link href="/users">
+            <li>Users</li>
+          </Link>
         </ul>
       </div>
     )} else {
