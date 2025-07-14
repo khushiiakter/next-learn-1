@@ -5,7 +5,7 @@ const getPostsDetails = async ({ id }) => {
   const data = await res.json();
   return data;
 };
-const PostDetails = async ({ params }) => {
+const PostDetails = async ({ params }) => { 
   // const p = await params;
   const { id } = params;
   // console.log(p.id);

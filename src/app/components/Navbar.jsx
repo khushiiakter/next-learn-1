@@ -10,7 +10,7 @@ const Navbar = () => {
     if(!hideNav){
        return (
       <div className="container mx-auto border p-5">
-        <ul className="flex justify-center text-2xl gap-10">
+        <ul className="flex justify-center text-xl gap-6">
           <Link href="/">
             <li>Home</li>
           </Link>
@@ -31,6 +31,9 @@ const Navbar = () => {
           </Link>
           <Link href="/users">
             <li>Users</li>
+          </Link>
+          <Link href="/meals">
+            <li>Meals</li>
           </Link>
         </ul>
       </div>
