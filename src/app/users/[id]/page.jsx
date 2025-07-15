@@ -1,4 +1,8 @@
-import React from 'react'
+
+export const metadata = {
+  title: "User Details",
+  
+};
 const getUser = async (id)=>{
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
     const data = await res.json();

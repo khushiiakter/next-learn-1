@@ -1,6 +1,9 @@
 // "use client";
 import React from 'react'
-
+export const metadata = {
+  title: "ServiceDetails",
+  
+};
 const ServiceDetails = ({params}) => {
     const {id} = params;
     const services = [

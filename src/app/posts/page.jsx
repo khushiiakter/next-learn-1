@@ -1,6 +1,10 @@
 import React from 'react'
 import Post from '../components/Post';
 
+export const metadata = {
+  title: "Posts",
+  
+};
 const getPosts = async ()=>{
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();

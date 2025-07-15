@@ -2,6 +2,10 @@
 import React from "react";
 import Service from "../components/Service";
 
+export const metadata = {
+  title: "All Services",
+  
+};
 
 const Services = () => {
   const services = [

@@ -1,6 +1,10 @@
 import React from 'react'
 import User from '../components/User';
 
+export const metadata = {
+  title: "Users",
+  
+};
 //server side rendering
 const getUsers = async() =>{
   const res = await fetch("https://jsonplaceholder.typicode.com/users");

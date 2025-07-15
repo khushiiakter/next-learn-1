@@ -35,6 +35,9 @@ const Navbar = () => {
           <Link href="/meals">
             <li>Meals</li>
           </Link>
+          <Link href="/register">
+            <li>Register</li>
+          </Link>
         </ul>
       </div>
     )} else {
