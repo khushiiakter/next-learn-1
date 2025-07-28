@@ -7,8 +7,8 @@ const LoginBtn = () => {
     if (session) {
     return (
       <>
-        <h1>Welcome, {session.user.name}</h1>
-        <p>{session.user.email}</p>
+        <h1 className="text-3xl  pb-4">Welcome, {session.user.name}</h1>
+        <p className="text-3xl  pb-4">Email: {session.user.email}</p>
         <button className='btn text-xl  btn-outline' onClick={() => signOut()}>Log Out</button>
       </>
     );
