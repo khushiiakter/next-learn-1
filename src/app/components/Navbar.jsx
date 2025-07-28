@@ -38,6 +38,9 @@ const Navbar = () => {
           <Link href="/register">
             <li>Register</li>
           </Link>
+          <Link href="/todos">
+            <li>Todos</li>
+          </Link>
         </ul>
       </div>
     )} else {

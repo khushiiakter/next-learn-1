@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NextAuthSessionProvider from "@/Providers/NextAuthSessionProvider";
+import QueryProvider from "@/Providers/QueryProvider";
+
 // import { usePathname } from "next/navigation";
 // import { usePathname } from "next/navigation";
 
@@ -29,30 +31,21 @@ export default function RootLayout({ children }) {
   // const hideNav = pathname?.includes("dashboard") || pathname === "/not-found";
 
   return (
-    <html lang="en">
+    <QueryProvider>
       <NextAuthSessionProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable}   antialiased  `}
-        >
-          <Navbar></Navbar>
-          <main className="min-h-[calc(100vh-160px)] text-center ">
-            {children}
-          </main>
+        <html lang="en">
+          <body
+            className={`${geistSans.variable} ${geistMono.variable}   antialiased  `}
+          >
+            <Navbar></Navbar>
+            <main className="min-h-[calc(100vh-160px)] text-center ">
+              {children}
+            </main>
 
-          <Footer></Footer>
-        </body>
-        {/* <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen  antialiased flex flex-col `}
-      >
-        <Navbar></Navbar>
-       <main className="flex-1   text-center ">
-        {children}
-       </main>
-        
-        <Footer></Footer>
-        
-      </body> */}
+            <Footer></Footer>
+          </body>
+        </html>{" "}
       </NextAuthSessionProvider>
-    </html>
+    </QueryProvider>
   );
 }

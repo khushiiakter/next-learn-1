@@ -12,7 +12,7 @@ const getPosts = async ()=>{
 }
 const Posts =async () => {
     const posts = await getPosts();
-    console.log(posts);
+    // console.log(posts);
   return (
     <div>
         <h1>Posts:  {posts.length}</h1>
