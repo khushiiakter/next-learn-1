@@ -41,6 +41,15 @@ const Navbar = () => {
           <Link href="/todos">
             <li>Todos</li>
           </Link>
+          <Link href="/dashboard">
+            <li>dashboard</li>
+          </Link>
+          <Link href="/login">
+            <li>login</li>
+          </Link>
+          <Link href="/signup">
+            <li>Register</li>
+          </Link>
         </ul>
       </div>
     )} else {

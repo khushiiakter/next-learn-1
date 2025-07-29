@@ -2,8 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import NextAuthSessionProvider from "@/Providers/NextAuthSessionProvider";
-import QueryProvider from "@/Providers/QueryProvider";
+import QueryProvider from "../Providers/QueryProvider.jsx";
+import NextAuthSessionProvider from "../Providers/NextAuthSessionProvider"
+
 
 // import { usePathname } from "next/navigation";
 // import { usePathname } from "next/navigation";
