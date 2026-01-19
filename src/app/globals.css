@@ -2,9 +2,9 @@
 @plugin "daisyui";
 
 :root {
-  /* --background: radial-gradient(1200px circle at 10% 10%, rgba(124, 58, 237, 0.25), transparent 45%),
+  --background: radial-gradient(1200px circle at 10% 10%, rgba(124, 58, 237, 0.25), transparent 45%),
     radial-gradient(900px circle at 90% 20%, rgba(192, 132, 252, 0.18), transparent 50%),
-    linear-gradient(135deg, #050109 0%, #14071f 45%, #240936 100%); */
+    linear-gradient(135deg, #050109 0%, #14071f 45%, #240936 100%);
   --foreground: #f5f3ff;
   --card-bg: rgba(14, 8, 24, 0.7);
   --card-border: rgba(192, 132, 252, 0.2);
