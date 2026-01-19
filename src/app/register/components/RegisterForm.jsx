@@ -9,17 +9,22 @@ const RegisterForm = () => {
     const payload = { username, password, email };
   };
   return (
-    <div className="card  bg-base-100 w-full max-w-md h-fit shrink-0 shadow-2xl">
-      <div className="card-body ">
+    <div className="glass-card w-full max-w-md h-fit shrink-0">
+      <div className="card-body">
         <form onSubmit={handleSubmit}  className="fieldset ">
           <label className="label">Name</label>
-          <input type="text" name="username" className="input w-full" placeholder="Name" />
+          <input
+            type="text"
+            name="username"
+            className="input input-bordered w-full bg-white/10 border-violet-200/20 text-white placeholder-violet-200/70"
+            placeholder="Name"
+          />
 
           <label className="label">Email</label>
           <input
             type="email"
             name="email"
-            className="input w-full"
+            className="input input-bordered w-full bg-white/10 border-violet-200/20 text-white placeholder-violet-200/70"
             placeholder="Email"
           />
 
@@ -27,11 +32,11 @@ const RegisterForm = () => {
           <input
             type="password"
             name="password"
-            className="input w-full"
+            className="input input-bordered w-full bg-white/10 border-violet-200/20 text-white placeholder-violet-200/70"
             placeholder="Password"
           />
 
-          <button className="btn btn-neutral mt-4">Register</button>
+          <button className="btn btn-gradient mt-4">Register</button>
         </form>
       </div>
     </div>

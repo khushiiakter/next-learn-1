@@ -13,7 +13,6 @@ export default async function Home() {
       {/* <div>
         <UserInfo></UserInfo>
       </div> */}
-      <hr />
       {/* <h2 className="pt-10">server userinfo</h2>
       <h3>{JSON.stringify(session)}</h3>
       <h3>User Name: {session?.user?.name}</h3> */}

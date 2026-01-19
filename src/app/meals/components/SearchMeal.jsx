@@ -15,16 +15,24 @@ const SearchMeal = () => {
     const url = `${pathname}?${urlQueryParam}`;
     router.push(url);
 
-  }, [search]);
+  }, [search, pathname, router]);
+  
   return (
-    <div>
-      <input
-        type="text"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Type here"
-        className="input w-2/3 mb-6"
-      />
+    <div className="flex justify-center">
+      <div className="glass-card p-6 w-full max-w-md">
+        <div className="relative">
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search for delicious meals..."
+            className="input input-bordered w-full bg-white/10 border-violet-200/20 text-white placeholder-violet-200/70 pl-12"
+          />
+          <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-violet-200/70">
+            🔍
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -12,20 +12,22 @@ const getPosts = async ()=>{
 }
 const Posts =async () => {
     const posts = await getPosts();
-    // console.log(posts);
-  return (
-    <div>
-        <h1>Posts:  {posts.length}</h1>
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold gradient-text mb-4">Latest Posts</h1>
+          <p className="text-xl opacity-90">Discover {posts.length} amazing articles</p>
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
            {
             posts.map((post)=>
                <Post key={post.id} post={post}></Post>
             )
            }
         </div>
-
-    </div>
-  )
+      </div>
+    )
 }
 
 export default Posts;

@@ -32,21 +32,21 @@ export default function RootLayout({ children }) {
   // const hideNav = pathname?.includes("dashboard") || pathname === "/not-found";
 
   return (
-    <QueryProvider>
-      <NextAuthSessionProvider>
-        <html lang="en">
-          <body
-            className={`${geistSans.variable} ${geistMono.variable}   antialiased  `}
-          >
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}   antialiased  `}
+        suppressHydrationWarning
+      >
+        <QueryProvider>
+          <NextAuthSessionProvider>
             <Navbar></Navbar>
             <main className="min-h-[calc(100vh-160px)] text-center ">
               {children}
             </main>
-
             <Footer></Footer>
-          </body>
-        </html>{" "}
-      </NextAuthSessionProvider>
-    </QueryProvider>
+          </NextAuthSessionProvider>
+        </QueryProvider>
+      </body>
+    </html>
   );
 }
